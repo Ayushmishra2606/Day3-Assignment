@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="align-items: center;">
+    <form action="post">
+        <table style=" align-items: center;" >
+            <tr style="text-align: center;">
+                <th colspan="2">
+                    <h3><b>Techfest Registration Form</b></h3>
+                </th>
+            </tr>
+            <tr>
+                <td><label for="Name"><b>Name</b></label></td>
+                <td><input type="text" placeholder="Enter your Name">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email"><b>Email Address:</b></label></td>
+                <td><input type="email" id="email" name="email" placeholder="Enter your Email" required></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>Gender:</label>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+
+                    <input type="radio" id="other" name="gender" value="Other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                  <label for="year">Year of Study:</label>
+      <select id="year" name="year">
+        <option value="1st">1st Year</option>
+        <option value="2nd">2nd Year</option>
+        <option value="3rd">3rd Year</option>
+        <option value="4th">4th Year</option>
+      </select>  
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>Select Events You Want to Participate In:</label><br>
+      <input type="checkbox" id="hackathon" name="events" value="Hackathon">
+      <label for="hackathon">Hackathon</label><br>
+
+      <input type="checkbox" id="coding" name="events" value="Coding Challenge">
+      <label for="coding">Coding Challenge</label><br>
+
+      <input type="checkbox" id="robotics" name="events" value="Robotics">
+      <label for="robotics">Robotics</label><br>
+
+      <input type="checkbox" id="quiz" name="events" value="Tech Quiz">
+      <label for="quiz">Tech Quiz</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <label for="comments">Any Suggestions or Comments:</label><br>
+      <textarea id="comments" name="comments" rows="4" placeholder="Share your thoughts..."></textarea>
+                </td>
+            </tr>
+            <tr><td colspan="2" style="text-align: center;">
+                <button type="submit">Register</button>
+            </td></tr>
+        </table>
+    </form>
+</body>
+
+</html>
